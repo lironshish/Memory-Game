@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Indie Flower', cursive;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 150%;
+    overflow-y: auto;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+    font-size: 60px;
+    padding-bottom: 0%;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+    padding-top: 0%;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-right: 200px;
+    margin-left: 600px;
+}
+
+.options {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    height: 550px;
+    width: 850px;
+    border-radius: 15px;
+    padding-top: 50px;
+    z-index: 1;
+}
+
+.gameInfo {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    height: 200px;
+    width: 400px;
+    align-items: center;
+}
+
+.label-info {
+    font-size: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.my-title {
+    font-weight: bold;
+    margin: 0.8rem 0;
+    font-size: 25px;
+}
+
+.text-input {
+    width: 252px;
+    height: 35px;
+    border-radius: 10px;
+    border: 2px solid #d3b68a;
+    padding: 0.8rem;
+    font-size: 17px;
+    line-height: 120%;
+    color: black;
+}
+
+.size-options {
+    display: flex;
+    justify-content: center;
+}
+
+.cont {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: auto;
+    margin: 10px 10px;
+}
+
+.size-radio {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.cont:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.cont input:checked~.checkmark {
+    background-color: #beb986;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.cont input:checked~.checkmark:after {
+    display: block;
+}
+
+.cont .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 90%;
+    background: white;
+}
+
+.submit {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #d3b68a;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    align-self: center;
+}
+
+.submit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.submit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.submit:hover span {
+    padding-right: 25px;
+}
+
+.submit:hover span:after {
+    opacity: 1;
+    right: 0;
+}

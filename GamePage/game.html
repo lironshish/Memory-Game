@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="gameStyle.css" />
+    <title>Memory Game</title>
+    <!-- Fonts imported form Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+
+<body style="background-color:rgb(221, 217, 202);">
+    <div class="container">
+        <div class="gameCont">
+            <div class="gameRecords">
+               <!-- Upper part - Data players -->
+                <div class="player player1-info">
+                    <h3 class="player1-h3"></h3>
+                    <span class="scoreRecords">Wins:<span class="score player1-wins "></span></span>
+                    <span class="scoreRecords">Points:<span class="score player1-points "></span></span>
+                </div>
+
+                <div class="playAgain-trun">
+                    <span class="playerTurn"> </span>
+                    
+                    <button class="playAgain" style="vertical-align:middle">
+                        <span>Play Again</span>
+                    </button>
+                </div>
+
+                <div class="player player2-info">
+                    <h3 class="player2-h3"></h3>
+                    <span class="scoreRecords">Wins:<span class="score player2-wins "></span></span>
+                    <span class="scoreRecords">Points:<span class="score player2-points "></span></span>
+                </div>
+            </div>
+            <div class="board"></div>
+        </div>
+    </div>
+</body>
+<script type="module" src="game.js "></script>
+<script type="module" src="../cards/cards.mjs"></script>
+<script type="module" src="../modules/Player.mjs "></script>
+<script type="module" src="../modules/Board.mjs "></script>
+<script type="module" src="../modules/Card.mjs"></script>
+
+</html>

@@ -1,0 +1,169 @@
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Indie Flower', cursive;
+  }
+  
+  .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 134.69%;
+      overflow-y: auto;
+  }
+  
+  .gameCont {
+      display: flex;
+      position: absolute;
+      flex-direction: column;
+      align-items: center;
+      background-color: #ffffff;
+      height: 780px;
+      width: 850px;
+      border-radius: 15px;
+      padding-top: 40px;
+      z-index: 1;
+  }
+  
+  .gameRecords {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding-top: 80px;
+      padding-bottom: 20px;
+      background-color: rgb(199, 159, 114);
+      border-radius: 10px;
+      font-size: 20px;
+  }
+  
+  .player1-name,
+  .player2-name {
+      font-size: 40px;
+      margin: 0.8rem;
+      color: white;
+  }
+  
+  .player {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      align-items: center;
+  }
+  
+  .scoreRecords {
+      width: 80px;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .playAgain-trun {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .playerTurn {
+      font-family: 'Indie Flower', cursive;
+      font-size: 3rem;
+      display: flex;
+      justify-content: center;
+      color: white;
+      width: 380px;
+      padding-top: 1%;
+      padding-bottom: 20px;
+  }
+  
+  .playAgain {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #d3b68a;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 15px;
+      padding: 15px;
+      width: 120px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+      align-self: center;
+  }
+  
+  .playAgain span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+  }
+  
+  .playAgain span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+  }
+  
+  .playAgain:hover span {
+      padding-right: 25px;
+  }
+  
+  .playAgain:hover span:after {
+      opacity: 1;
+      right: 0;
+  }
+  
+  .board {
+      width: 100%;
+      padding: 10px;
+      justify-content: center;
+      perspective: 1000px;
+      display: grid;
+      grid-gap: 1%;
+  }
+  
+  .card {
+      height: 100px;
+      width: 100px;
+      border-radius: 20px;
+      position: relative;
+      box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+      transform: scale(1);
+      transform-style: preserve-3d;
+      transition: transform 0.5s;
+  }
+  
+  .card:active {
+      transform: scale(0.97);
+      transition: transform 0.2s;
+  }
+  
+  .card.flip {
+      transform: rotateY(180deg);
+  }
+  
+  .card-back,
+  .card-front {
+      width: 100%;
+      height: 100%;
+      padding: 5px;
+      position: absolute;
+      border-radius: 10px;
+      background: #d3b68a;
+      backface-visibility: hidden;
+  }
+  
+  .card-back {
+      color: white;
+  }
+  
+  .card-front {
+      transform: rotateY(180deg);
+  }

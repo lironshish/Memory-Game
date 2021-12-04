@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style></style>
+    <link rel="stylesheet" href="style.css">
+
+    <title>Memory Game</title>
+
+    <!-- Fonts imported form Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+</head>
+
+
+
+<body style="background-color:rgb(221, 217, 202);">
+    <!-- Titles -->
+    <h1>Memory Game</h1>
+    <h2>Sapir Elimeleh & Liron Shish</h2>
+    </br>
+    </br>
+    <div class="container">
+
+        <div class="options">
+
+            <!-- PLAYERS NAMES AND SIZE INFO-->
+            <div class="gameInfo">
+
+                <label class="label-info" for="playerName1">
+                    <span class="my-title">Player 1 Name:</span>
+                    <input class="text-input" onfocus="this.value=''" type="text" value="Enter Player 1 Name" />
+                </label>
+                </br>
+                <label class="label-info" for="playerName2">
+                    <span class="my-title">Player 2 Name:</span>
+                    <input class="text-input" onfocus="this.value=''" type="text" value="Enter Player 2 Name" />
+                </label>
+
+                <!-- SIZE OPTIONS SELECTOR-->
+                </br>
+                <span class="my-title">Select Game Size:</span>
+                <div class="size-options">
+
+                    <label class="cont">4X4
+                        <input class="size-radio" type="radio" id="4" name="size" value="4" checked="checked"></input>
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <label class="cont">5X5
+                        <input class="size-radio" type="radio" id="5" name="size" value="5"></input>
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                </br>
+                </br>
+                <!-- Play button -->
+                <button class="submit" type="submit" style="vertical-align:middle">
+                    <span>Play!</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="myJs.js"></script>
+    <script type="module" src="./modules/Player.mjs"></script>
+
+</body>
+
+</html>
