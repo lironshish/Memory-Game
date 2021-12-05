@@ -5,5 +5,4 @@
 
 
 ![This is an image](https://raw.githubusercontent.com/lironshish/Memory-Game/main/ReadMePic/screen%201.png)
-![This is an image](https://raw.githubusercontent.com/lironshish/Memory-Game/main/ReadMePic/screen%202.png
-)
+![This is an image](https://raw.githubusercontent.com/lironshish/Memory-Game/main/ReadMePic/screen%202.png)
